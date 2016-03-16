@@ -26,7 +26,6 @@ $(function() {
 	
 	});
 
-
 	$('#textArea').hide();
 
 	var i2 = 0;
