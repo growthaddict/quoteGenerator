@@ -14,8 +14,10 @@
 			</div>
 			<form>
 				<b align="center">Singular word:</b><br>
-				<input id='singularInput' class="centerMe" type='text'><br><br>
+				<p class="errorMessage" id="singularError">Error: Singular Input Was Left Blank</p>
+				<input d='singularInput' class="centerMe" type='text'><br><br>
 				<b class="centerMe">Plural Word (should be plural version of singular word input)</b><br>
+				<p class="errorMessage" id="pluralError">Error: Singular Input Was Left Blank</p>
 				<input id='pluralInput' class="centerMe" type='text'><br>
 				<button id="addToQuote" class="centerMe">Add to quote</button>
 			</form>

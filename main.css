@@ -23,3 +23,12 @@ body {
 	align:center;
 }
 
+.errorMessage {
+	color: red;
+	font-size: 14px;
+}
+
+#singularError,#pluralError {
+	display: none;
+
+}
