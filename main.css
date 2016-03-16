@@ -1,24 +1,84 @@
-body {
-	background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(7,30,201,.41),rgba(8,32,210,.93)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(7,30,201,.41),rgba(8,32,210,.93)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(7,30,201,.41),rgba(8,32,210,.93)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(7,30,201,.41),rgba(8,32,210,.93)); /* Standard syntax */
+*{margin:0;padding:0;}
+
+html { 
+  background: url(img/bg.png) repeat; 
 }
 
-#outter { 
-	width: 500px;
-    height: 100px;
-
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    margin: auto; 
+#main-wrapper { 
+	width:100%;
 }
-
-.centerMe {
-	align:center;
+#header-wrapper{
+    width:100%;
+    height:60px;
+    border-bottom:solid 1px #ebebeb;
+    background:#83cbff;
+}
+#header-wrapper>h1{
+    font-family:helvetica,verdana,sans-serif;
+    text-align:center;
+    line-height:60px;
+    color:#fff;
+}
+#inner-wrapper{
+    width:600px;
+    margin:0 auto;
+    border:solid 1px #aeaeae;
+    border-radius:4px;
+    background:#fff;
+    margin-top:80px;
+}
+#inner-wrapper>h3{
+    font-family:helvetica,verdana,sans-serif;
+    text-align:center;
+    color:#aeaeae;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    border-bottom:solid 1px #aeaeae;
+    font-weight:normal;
+}
+.trumpify-form{
+    width:600px;
+    padding:5px 0;
+}
+.input-label{
+    width:200px;
+    float:left;
+    font-family:helvetica,verdana,sans-serif;
+    color:#343434;
+    text-align:right;
+}
+.input-field{
+    width:340px;
+    float:left;
+    margin-left:10px;
+    border-radius:2px;
+    border:solid 1px #aeaeae;
+    height:10px;
+    padding:5px;
+    background:#ebebeb;
+}
+.form-row,.result-row{
+    width:600px;
+    padding:0 20px;
+    margin:10px 0;
+}
+.trumpButton{
+    height:30px;
+    padding:5px;
+    border-radius:2px;
+    border:solid 1px #ff0000;
+    background:#f28174;
+    font-weight:bold;
+    color:#343434;
+    cursor:pointer;
+}
+#textArea{
+    width:540px;
+    font-family:helvetica,verdana,sans-serif;
+    color:#757575;
+    line-height:16pt;
+}
+.genButton{
+    margin-top:15px;
 }
