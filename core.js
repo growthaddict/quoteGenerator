@@ -37,10 +37,6 @@ $(function() {
 		var singularInput = $('#singularInput').val();
 		var pluralInput = $('#pluralInput').val();
 
-
-		
-
-
 		stuff1.unshift(singularInput);
 		stuff2.unshift(pluralInput);	
 
