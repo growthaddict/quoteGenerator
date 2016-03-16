@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="core.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>	
+	<body>
+		<div id="outter">
+			<div id="userInputs">
+			<form>
+				<b class="centerMe">Singular word:</b><br>
+				<input id='singularInput' class="centerMe" type='text'><br><br>
+				<b class="centerMe">Plural Word (should be plural version of singular word input)</b><br>
+				<input id='pluralInput' class="centerMe" type='text'><br>
+				<button id="addToQuote" class="centerMe">Add to quote</button>
+			</form>
+			</div>
+			<div id="addNewInput">
+				<button id="newInputButton">Add Another Input</button>	
+			</div>
+
+
+			<div id="textArea">
+			 I will build a great <span class="singular">wall</span> and nobody builds <span class="plural">walls</span> better than me, believe me and I will build them very inexpensively. I will build a great, great <span class="singular">wall</span> on our southern border, and I will make Mexico pay for that <span class="singular">wall</span>. Mark my words.
+				<div id="generateQuote">
+					<button>Generate Random Quote</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
