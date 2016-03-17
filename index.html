@@ -25,11 +25,13 @@
 			<form class="trumpify-form">
 				<div class="form-row">
 					<h4 class="input-label">Enter a singular word:</h4>
+					<p class="errorMessage" id="singularError">Error: Singular Input Was Left Blank</p>
 					<input id='singularInput' class="input-field" type='text' placeholder="wall">
 					<div style="clear:both;"></div>
 				</div>	
 				<div class="form-row">
 					<h4 class="input-label">Enter the plural version:</h4>
+					<p class="errorMessage" id="pluralError">Error: Singular Input Was Left Blank</p>
 					<input id='pluralInput' class="input-field" type='text' placeholder="walls">
 					<div style="clear:both;"></div>
 				</div>
@@ -50,12 +52,8 @@
 			I will build a great <span class="singular">wall</span> and nobody builds <span class="plural">walls</span> better than me, believe me and I will build them very inexpensively. I will build a great, great <span class="singular">wall</span> on our southern border, and I will make Mexico pay for that <span class="singular">wall</span>. Mark my words.
 
 			<div id="generateQuote">
-				<button class="trumpButton genButton">Generate Random Quote</button>
+				<button id="generateQuote" class="trumpButton genButton">Generate Random Quote</button>
 			</div>
-
-		</div>
-
-
 
 	</div>
 
@@ -64,3 +62,4 @@
 </body>
 
 </html>
+

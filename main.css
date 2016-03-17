@@ -79,6 +79,19 @@ html {
     color:#757575;
     line-height:16pt;
 }
+<<<<<<< HEAD
 .genButton{
     margin-top:15px;
+}
+=======
+
+.errorMessage {
+	color: red;
+	font-size: 14px;
+}
+
+#singularError,#pluralError {
+	display: none;
+
+>>>>>>> master
 }
