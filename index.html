@@ -1,36 +1,65 @@
+<!DOCTYPE html>
+
 <html>
-	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script src="core.js"></script>
-		<link rel="stylesheet" type="text/css" href="main.css">
-	</head>	
-	<body>
-		<div id="outter">
-			<div id="userInputs">
-			<div>
-					<h2 align="center">LOL Generator</h2>
-					<p><b>How It Works:</b> You enter a singular and plural of the same root word and the script replaces "wall" with your singular input, and "walls" with your plural input in the below quote.</p>
-					<p>"I will build a great <b>wall</b> and nobody builds <b>walls</b> better than me, believe me and I will build them very inexpensively. I will build a great, great <b>wall</b> on our southern border, and I will make Mexico pay for that <b>wall</b>. Mark my words."</p>
-			</div>
-			<form>
-				<b align="center">Singular word:</b><br>
-				<p class="errorMessage" id="singularError">Error: Singular Input Was Left Blank</p>
-				<input d='singularInput' class="centerMe" type='text'><br><br>
-				<b class="centerMe">Plural Word (should be plural version of singular word input)</b><br>
-				<p class="errorMessage" id="pluralError">Error: Singular Input Was Left Blank</p>
-				<input id='pluralInput' class="centerMe" type='text'><br>
-				<button id="addToQuote" class="centerMe">Add to quote</button>
-			</form>
-			</div>
-			<div id="addNewInput">
-				<button id="newInputButton">Add Another Input</button>	
-			</div>
-			<div id="textArea">
-			 I will build a great <span class="singular">wall</span> and nobody builds <span class="plural">walls</span> better than me, believe me and I will build them very inexpensively. I will build a great, great <span class="singular">wall</span> on our southern border, and I will make Mexico pay for that <span class="singular">wall</span>. Mark my words.
-				<div id="generateQuote">
-					<button>Generate Random Quote</button>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="core.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>	
+
+<body>
+
+<div id="main-wrapper">
+
+	<div id="header-wrapper">
+		<h1>Do you even Trump, bro?</h1>
+	</div>
+
+	<div id="inner-wrapper">
+
+		<h3>Trumpify a word. Do it, it'll be great, like America.</h3>
+
+		<div id="userInputs">
+
+			<form class="trumpify-form">
+				<div class="form-row">
+					<h4 class="input-label">Enter a singular word:</h4>
+					<p class="errorMessage" id="singularError">Error: Singular Input Was Left Blank</p>
+					<input id='singularInput' class="input-field" type='text' placeholder="wall">
+					<div style="clear:both;"></div>
+				</div>	
+				<div class="form-row">
+					<h4 class="input-label">Enter the plural version:</h4>
+					<p class="errorMessage" id="pluralError">Error: Singular Input Was Left Blank</p>
+					<input id='pluralInput' class="input-field" type='text' placeholder="walls">
+					<div style="clear:both;"></div>
 				</div>
-			</div>
+				<div class="form-row">
+					<button id="addToQuote" class="trumpButton">TRUMPIFY</button>
+					<div style="clear:both;"></div>
+				</div>
+			</form>
+
 		</div>
-	</body>
+
+		<div id="addNewInput" class="result-row">
+			<button id="newInputButton" class="trumpButton">Add Another Input</button>	
+		</div>
+
+		<div id="textArea" class="result-row">
+
+			I will build a great <span class="singular">wall</span> and nobody builds <span class="plural">walls</span> better than me, believe me and I will build them very inexpensively. I will build a great, great <span class="singular">wall</span> on our southern border, and I will make Mexico pay for that <span class="singular">wall</span>. Mark my words.
+
+			<div id="generateQuote">
+				<button id="generateQuote" class="trumpButton genButton">Generate Random Quote</button>
+			</div>
+
+	</div>
+
+</div>
+
+</body>
+
 </html>
+
