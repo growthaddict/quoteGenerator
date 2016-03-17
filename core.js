@@ -33,19 +33,16 @@ $(function() {
 	$('#textArea').hide();
 
 	//when addToQuote button is clicked
-	$("#addToQuote").click(function(e) { 
-
-		console.log(singularInput);
-		console.log(pluralInput);
-
+	$("#addToQuote").click(function(e) {
+		
    		e.preventDefault();
 
    		//Get the value from singularInput form field
 		var singularInput = $('#singularInput').val();
-
+		
    		//Get the value from pluralInput form field
 		var pluralInput = $('#pluralInput').val();
-
+		
 		//Add singular input to front of array
 		stuff1.unshift(singularInput);
 
@@ -54,23 +51,24 @@ $(function() {
 
 		var sing = stuff1[i];
 		var plur = stuff2[i];
-
+		
 		//Find each singular class element
 		$('.singular').each(function(){
 			//Replace singular element with singular word from array
-			$(this).text(sing)	
+			$(this).text(sing);
 		});
 
 		//Find each plural class element
 		$('.plural').each(function(){
 			//Replace singular element with singular word from array
-			$(this).text(plur)
+			$(this).text(plur);
 		});	
 
 		var errors = '';
 
 		//if singular input is emptu
 		if (!$.trim(singularInput).length) {
+
 			//get singularError element
 			var singularError = $('#singularError');
 
@@ -95,6 +93,7 @@ $(function() {
 
 		//if error messages are not visible
 		if (singularVisible === false && pluralVisible === false) {
+			
 			//Hide userInputs on click
 			$('#userInputs').hide();
 
